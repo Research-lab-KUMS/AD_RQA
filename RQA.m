@@ -43,7 +43,7 @@ root_flist = [AD_4m_root_flist; WT_4m_root_flist; AD_6m_root_flist; WT_6m_root_f
 %prerequisites to calculate RP
 dim = 6;
 td = 3;
-radius = 24.88; %9.16 4.58 9.95 19.90 14.92 17.91
+radius = 9.16; %9.16 4.58 9.95 19.90 14.92 17.91 24.88
 norm = 'nonormalize';
 method = 'euclidean';
 
