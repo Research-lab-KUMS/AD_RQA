@@ -1,7 +1,9 @@
 %path to .mat time series
-relPath = 'D:\Rezaei\RQA\Voxel_ROIs\DMLN(basal_parietal_ifnra)(AD6_13_AD4_13)';
-rRelsPath = 'D:\Rezaei\RQA\Voxel_ROIs\DMLN(basal_parietal_ifnra)(AD6_13_AD4_13)\RPs';
-mRelsPath = 'D:\Rezaei\RQA\Voxel_ROIs\DMLN(basal_parietal_ifnra)(AD6_13_AD4_13)\RQA_measures';
+relPath = '';
+%path to save RPs
+rRelsPath = '';
+%path to save RQA
+mRelsPath = '';
 
 measures = rp_measures(relPath, rRelsPath, mRelsPath);
 %save(fullfile(relsPath,'RQA.mat'), 'measures');
@@ -20,7 +22,7 @@ function mArray = rp_measures(relPath, rRelsPath, mRelsPath)
 %this function reads the data from all 4 classes given a relative path to 4
 %seperate folders per each class.
 %then with the given period of thereshold calculate recurrence rate for
-%each voxel and save them seperatly in 4 different folders with the given
+%each voxel and save them separately in 4 different folders with the given
 %relative relsPaty (1 per each class). this is done for each step of
 %threshold. also rerutns an array of tuples including the min rr per step
 
